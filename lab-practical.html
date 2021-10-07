@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+      <meta charset="utf-8">
+      <title></title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style media="screen">
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+      }
+
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+      }
+      caption {
+            caption-side: bottom;
+            margin-top: 10px;
+            color: grey;
+            text-align: center;
+      }
+
+      table {
+            text-align: left;
+            line-height: 15px;
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 80%;
+            margin: 20px auto;
+      }
+
+
+
+      th {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+      }
+      td{
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+      }
+
+      .Y {
+            color: green;
+            padding-top:10px;
+            padding-bottom:10px;
+      }
+
+      .X {
+            color: red;
+            padding-top:10px;
+            padding-bottom:10px;
+      }
+      .cost {
+            background-color: #EDF3E2;
+      }
+      .pages {
+            background-color: #D5E4BC;
+      }
+      .users {
+            background-color: #EDF3E2;
+      }
+      .data {
+            background-color: #EDF3E2;
+      }
+      .sites {
+            background-color: #D5E4BC;
+      }
+      .included {
+            background-color: #D5E4BC;
+      }
+      .Y {
+            background-color: #EDF3E2;
+      }
+      button {
+            padding: 10px;
+            border: 2px;
+            border-radius: 10px;
+            background-color: #64548F;
+            color: white;
+      }
+      button:hover{
+            background-color: red;
+      }
+      th, td {
+            border: 1px solid white ;
+      }
+      </style>
+</head>
+<body>
+      <table>
+            <thead>
+                  <tr>
+                        <th colspan="4" style="color: black;">SELECT YOUR PLAN</th>
+                  </tr>
+                  <tr>
+                        <th style="background-color: #D5E4BC"><span align="right"><i class="fa fa-toggle-on"></i></span>Basic</th>
+                        <th style="background-color: #BED9B4"> <span align="right"><i class="fa fa-home"></i></span>Plus</th>
+                        <th style="background-color: #B7D3C5"><span align="right"><i class="fa fa-cloud"></i></span>Deluxe</th>
+                        <th style="background-color: #B7CED7"> <span align="right"><i class="fa fa-heart"></i></span>Pro</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr class="cost">
+                        <td style="color: green; padding-top: 10px;">RS. 500/-</td>
+                        <td style="color: green; padding-top: 10px;">RS. 1500/-</td>
+                        <td style="color: green; padding-top: 10px;">RS. 2500/-</td>
+                        <td style="color: green; padding-top: 10px;">RS. 3500/-</td>
+                  </tr>
+                  <tr class="pages">
+                        <td>50 pages</td>
+                        <td style="background-color: #BED9B4">75 pages</td>
+                        <td style="background-color: #B7D3C5">Unlimited</td>
+                        <td style="background-color: #B7CED7">Unlimited</td>
+                  </tr>
+                  <tr class="users">
+                        <td>3 Users</td>
+                        <td>5 Users</td>
+                        <td>10 Users</td>
+                        <td>Unlimited</td>
+                  </tr>
+                  <tr class="sites">
+                        <td>10 Sites</td>
+                        <td style="background-color: #BED9B4">25 Sites</td>
+                        <td style="background-color: #B7D3C5">100 Sites</td>
+                        <td style="background-color: #B7CED7">Unlimited</td>
+                  </tr>
+                  <tr class="data">
+                        <td>50 MB</td>
+                        <td>250 MB</td>
+                        <td>1 GB</td>
+                        <td>5 GB</td>
+                  </tr>
+
+                  <tr class="included">
+                        <td>included</td>
+                        <td style="background-color: #BED9B4">included</td>
+                        <td style="background-color: #B7D3C5">included</td>
+                        <td style="background-color: #B7CED7">included</td>
+                  </tr>
+
+                  <tr class="Y">
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                  </tr>
+                  <tr>
+                        <td style="background-color: #D5E4BC" class="X">✘</td>
+                        <td style="background-color: #BED9B4" class="Y">✔</td>
+                        <td style="background-color: #B7D3C5" class="Y">✔</td>
+                        <td style="background-color: #B7CED7" class="Y">✔</td>
+                  </tr>
+                  <tr style="background-color: #EDF3E2;">
+                        <td class="X">✘</td>
+                        <td class="Y">✔</td>
+                        <td class="Y">✔</td>
+                        <td class="Y">✔</td>
+                  </tr>
+                  <tr>
+                        <td style="background-color: #D5E4BC" class="X">✘</td>
+                        <td style="background-color: #BED9B4" class="X">✘</td>
+                        <td style="background-color: #B7D3C5" class="Y">✔</td>
+                        <td style="background-color: #B7CED7" class="Y">✔</td>
+                  </tr>
+                  <tr style="background-color: #EDF3E2;">
+                        <td class="X">✘</td>
+                        <td class="X">✘</td>
+                        <td class="X">✘</td>
+                        <td class="Y">✔</td>
+                  </tr>
+
+                  <tr style="border-radius: 2px;">
+                        <td style="background-color: #D5E4BC"><button type="button" name="button">Sign Up</button></td>
+                        <td style="background-color: #BED9B4"><button type="button" name="button">Sign Up</button></td>
+                        <td style="background-color: #B7D3C5"><button type="button" name="button">Sign Up</button></td>
+                        <td style="background-color: #B7CED7"><button type="button" name="button">Sign Up</button></td>
+                  </tr>
+            </tbody>
+      </table>
+</body>
+</html>
